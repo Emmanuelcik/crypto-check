@@ -1,3 +1,4 @@
+import SearchForm from "./components/SearchForm";
 import "./index.css";
 function App() {
   return (
@@ -7,7 +8,7 @@ function App() {
           crypto-currency<span>Quoter</span>
         </h1>
         <div className="content">
-          
+          <SearchForm />
         </div>
       </div>
     </>
