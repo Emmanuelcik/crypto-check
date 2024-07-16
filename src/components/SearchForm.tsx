@@ -6,6 +6,7 @@ import ErrorMessage from "./ErrorMessage";
 
 const SearchForm = () => {
   const cryptCurrencies = useCryptoStore((state) => state.cryptoCurrencies);
+  const fetchData = useCryptoStore((state) => state.fetchData);
 
   const initialState = {
     currency: "",
@@ -26,6 +27,8 @@ const SearchForm = () => {
       return;
     }
     setError("");
+
+    fetchData(pair);
   };
   return (
     <form className="form" onSubmit={handleSubmit}>
