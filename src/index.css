@@ -82,3 +82,30 @@ body {
 .form [type="submit"]:hover {
   background-color: #0cb378;
 }
+
+.result-container {
+  margin-top: 5rem;
+}
+
+.result-container h2 {
+  text-align: center;
+}
+
+.price-display {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  align-items: center;
+  gap: 1rem;
+}
+
+.price-display img {
+  width: 100%;
+}
+
+.price-display p {
+  margin: 0 0 1rem;
+}
+
+.price-display span {
+  font-weight: 700;
+}
